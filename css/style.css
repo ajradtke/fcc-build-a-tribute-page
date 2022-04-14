@@ -22,6 +22,7 @@
 .title-sub {
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     font-size: 24px;
 }
@@ -63,9 +64,6 @@
     width: 30%;
     text-align: center;
     font-size: 16px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start; */
 }
 
 .timeline-item {
@@ -92,6 +90,8 @@
 
 .wiki-link {
     font-size: 24px;
+    text-align: center;
+    width: 80%;
 }
 
 #wiki-link-text:hover {
@@ -105,6 +105,21 @@
 @media (min-width: 900px) {
     #img-div {
         height: 1200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline-ul {
+        width: 80%;
+    }
+
+    #image {
+            width: 80%;
+            height: auto;
+    }
+
+    .timeline-quote-text {
+        width: 80%;
     }
 }
 
